@@ -50,6 +50,7 @@ const Index = () => {
       
       <div className="scan-line" />
 
+      <MobileNav />
       <nav className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-lg border-b border-primary/10">
         <div className="container mx-auto px-6 py-3 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 group">
@@ -67,6 +68,7 @@ const Index = () => {
             <a href="#about" className="hover:text-primary transition-colors py-1 border-b border-transparent hover:border-primary">about</a>
             <a href="#contact" className="px-4 py-2 bg-primary text-primary-foreground rounded text-xs tracking-wider hover:brightness-110 transition-all">contact</a>
           </div>
+          <MobileMenuButton />
         </div>
       </nav>
 
