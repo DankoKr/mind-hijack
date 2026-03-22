@@ -49,19 +49,22 @@ const Index = () => {
       
       <div className="scan-line" />
 
-      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="Mind Hijack" className="h-8 w-8" />
-            <span className="font-display font-bold text-lg tracking-wider text-foreground">
-              MIND <span className="text-primary">HIJACK</span>
-            </span>
-          </div>
-          <div className="hidden md:flex items-center gap-8 font-mono text-sm text-muted-foreground">
-            <a href="#services" className="hover:text-primary transition-colors">services</a>
-            <a href="#poc" className="hover:text-primary transition-colors">proof of concept</a>
-            <a href="#about" className="hover:text-primary transition-colors">about</a>
-            <a href="#contact" className="hover:text-primary transition-colors">contact</a>
+      <nav className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-lg border-b border-primary/10">
+        <div className="container mx-auto px-6 py-3 flex items-center justify-between">
+          <a href="#" className="flex items-center gap-3 group">
+            <img src={logo} alt="Mind Hijack" className="h-9 w-9 transition-transform group-hover:scale-110" />
+            <div className="flex flex-col leading-none">
+              <span className="font-display font-bold text-base tracking-widest text-foreground">
+                MIND <span className="text-primary">HIJACK</span>
+              </span>
+              <span className="font-mono text-[10px] text-muted-foreground tracking-wider">AI RED TEAMING</span>
+            </div>
+          </a>
+          <div className="hidden md:flex items-center gap-8 font-mono text-xs text-muted-foreground uppercase tracking-wider">
+            <a href="#services" className="hover:text-primary transition-colors py-1 border-b border-transparent hover:border-primary">services</a>
+            <a href="#poc" className="hover:text-primary transition-colors py-1 border-b border-transparent hover:border-primary">proof of concept</a>
+            <a href="#about" className="hover:text-primary transition-colors py-1 border-b border-transparent hover:border-primary">about</a>
+            <a href="#contact" className="px-4 py-2 bg-primary text-primary-foreground rounded text-xs tracking-wider hover:brightness-110 transition-all">contact</a>
           </div>
         </div>
       </nav>
