@@ -1,16 +1,172 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Shield, Bug, Brain, Crosshair, Terminal, Lock } from "lucide-react";
+import logo from "@/assets/logo.png";
+import MatrixRain from "@/components/MatrixRain";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const services = [
+  {
+    icon: Brain,
+    title: "LLM Red Teaming",
+    desc: "Adversarial testing to expose prompt injection, jailbreaks, and reasoning manipulation in your AI models.",
+  },
+  {
+    icon: Bug,
+    title: "Vulnerability Discovery",
+    desc: "Systematic probing of your AI stack to find exploitable weaknesses before attackers do.",
+  },
+  {
+    icon: Shield,
+    title: "Security Audits",
+    desc: "Comprehensive evaluation of AI system guardrails, data handling, and output safety.",
+  },
+  {
+    icon: Crosshair,
+    title: "Penetration Testing",
+    desc: "Real-world attack simulations against your AI-powered applications and APIs.",
+  },
+  {
+    icon: Terminal,
+    title: "Prompt Hardening",
+    desc: "Fortify your system prompts and input sanitization against sophisticated manipulation.",
+  },
+  {
+    icon: Lock,
+    title: "Compliance Review",
+    desc: "Ensure your AI deployments meet emerging regulatory frameworks and safety standards.",
+  },
+];
+
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
+      <MatrixRain />
+      
+      {/* Scan line effect */}
+      <div className="scan-line" />
+
+      {/* Nav */}
+      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Mind Hijack" className="h-8 w-8" />
+            <span className="font-display font-bold text-lg tracking-wider text-foreground">
+              MIND <span className="text-primary">HIJACK</span>
+            </span>
+          </div>
+          <div className="hidden md:flex items-center gap-8 font-mono text-sm text-muted-foreground">
+            <a href="#services" className="hover:text-primary transition-colors">services</a>
+            <a href="#about" className="hover:text-primary transition-colors">about</a>
+            <a href="#contact" className="hover:text-primary transition-colors">contact</a>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <section className="relative z-10 min-h-screen flex items-center justify-center px-6">
+        <div className="text-center max-w-4xl mx-auto">
+          <img src={logo} alt="Mind Hijack Logo" className="w-40 h-40 md:w-56 md:h-56 mx-auto mb-8 drop-shadow-2xl" />
+          
+          <h1 className="font-display font-bold text-4xl md:text-6xl lg:text-7xl tracking-tight mb-6 text-foreground">
+            MIND <span className="text-primary text-glow-red">HIJACK</span>
+          </h1>
+
+          <p className="font-mono text-base md:text-lg text-muted-foreground mb-3 tracking-wide">
+            AI RED TEAMING <span className="text-primary">|</span> PENTESTING
+          </p>
+
+          <div className="my-10 space-y-3">
+            <p className="font-display text-xl md:text-2xl lg:text-3xl text-foreground italic">
+              "Because every AI has a <span className="text-primary text-glow-red">forbidden fruit</span>"
+            </p>
+            <p className="font-mono text-sm md:text-base text-matrix text-glow-green tracking-widest uppercase">
+              The Serpent's Audit for LLMs
+            </p>
+          </div>
+
+          <a
+            href="#contact"
+            className="inline-block mt-6 px-8 py-3 bg-primary text-primary-foreground font-mono text-sm tracking-wider rounded glow-red hover:brightness-110 transition-all"
+          >
+            REQUEST AN AUDIT →
+          </a>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section id="services" className="relative z-10 py-24 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <p className="font-mono text-sm text-matrix text-glow-green tracking-widest mb-2">// SERVICES</p>
+            <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground">
+              What We <span className="text-primary">Exploit</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((s) => (
+              <div
+                key={s.title}
+                className="circuit-border rounded-lg p-6 bg-card/60 backdrop-blur-sm hover:bg-card transition-all group"
+              >
+                <s.icon className="w-8 h-8 text-primary mb-4 group-hover:drop-shadow-lg transition-all" />
+                <h3 className="font-display font-bold text-lg text-foreground mb-2">{s.title}</h3>
+                <p className="font-mono text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="relative z-10 py-24 px-6">
+        <div className="container mx-auto max-w-3xl text-center">
+          <p className="font-mono text-sm text-matrix text-glow-green tracking-widest mb-2">// ABOUT</p>
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-8">
+            Why <span className="text-primary">Mind Hijack</span>?
+          </h2>
+          <div className="circuit-border rounded-lg p-8 md:p-12 bg-card/40 backdrop-blur-sm">
+            <p className="font-mono text-muted-foreground leading-loose text-sm md:text-base">
+              Every AI system has blind spots. We find them before someone else does. Our team of adversarial AI researchers simulates real-world attacks against your LLMs, chatbots, and AI-powered applications — uncovering vulnerabilities that traditional security testing misses. We think like the serpent, so you don't get bitten.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA / Contact */}
+      <section id="contact" className="relative z-10 py-24 px-6">
+        <div className="container mx-auto max-w-2xl text-center">
+          <p className="font-mono text-sm text-matrix text-glow-green tracking-widest mb-2">// INITIATE</p>
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-4">
+            Ready to Test Your <span className="text-primary">Defenses</span>?
+          </h2>
+          <p className="font-mono text-sm text-muted-foreground mb-10">
+            Let the serpent audit your AI. Get in touch for a confidential assessment.
+          </p>
+
+          <a
+            href="mailto:hello@mindhijack.com"
+            className="inline-block px-10 py-4 bg-primary text-primary-foreground font-mono text-sm tracking-wider rounded glow-red hover:brightness-110 transition-all"
+          >
+            CONTACT US →
+          </a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="relative z-10 border-t border-border py-8 px-6">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <img src={logo} alt="Mind Hijack" className="h-6 w-6" />
+            <span className="font-display text-sm text-muted-foreground">
+              © 2026 Mind Hijack. All rights reserved.
+            </span>
+          </div>
+          <p className="font-mono text-xs text-muted-foreground">
+            AI Red Teaming & Pentesting
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
