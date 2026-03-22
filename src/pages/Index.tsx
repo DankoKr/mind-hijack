@@ -1,4 +1,5 @@
-import { Shield, Bug, Brain, Crosshair, Terminal, Lock, ImageIcon } from "lucide-react";
+import { useState } from "react";
+import { Shield, Bug, Brain, Crosshair, Terminal, Lock, ImageIcon, Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 import MatrixRain from "@/components/MatrixRain";
 
