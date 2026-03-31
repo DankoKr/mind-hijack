@@ -23,7 +23,6 @@ const translations = {
     pocLabel: "PROOF OF CONCEPT",
     pocTitle: "Our",
     pocHighlight: "Work",
-    pocPlaceholder: "Replace with your PoC image",
     aboutLabel: "ABOUT",
     aboutTitle: "Why",
     aboutHighlight: "Mind Hijack",
@@ -32,25 +31,33 @@ const translations = {
     contactLabel: "INITIATE",
     contactTitle: "Ready to Test Your",
     contactHighlight: "Defenses",
-    contactDesc: "Let the serpent audit your AI. Get in touch for a confidential assessment.",
+    contactDesc:
+      "Let the serpent audit your AI. Get in touch for a confidential assessment.",
     contactCta: "CONTACT US →",
     copyright: "© 2026 Mind Hijack. All rights reserved.",
     svcLlm: "LLM Red Teaming",
-    svcLlmDesc: "Adversarial testing to expose prompt injection, jailbreaks, and reasoning manipulation in your AI models.",
+    svcLlmDesc:
+      "Adversarial testing to expose prompt injection, jailbreaks, and reasoning manipulation in your AI models.",
     svcVuln: "Vulnerability Discovery",
-    svcVulnDesc: "Systematic probing of your AI stack to find exploitable weaknesses before attackers do.",
+    svcVulnDesc:
+      "Systematic probing of your AI stack to find exploitable weaknesses before attackers do.",
     svcAudit: "Security Audits",
-    svcAuditDesc: "Comprehensive evaluation of AI system guardrails, data handling, and output safety.",
+    svcAuditDesc:
+      "Comprehensive evaluation of AI system guardrails, data handling, and output safety.",
     svcPentest: "Penetration Testing",
-    svcPentestDesc: "Real-world attack simulations against your AI-powered applications and APIs.",
+    svcPentestDesc:
+      "Real-world attack simulations against your AI-powered applications and APIs.",
     svcPrompt: "Prompt Hardening",
-    svcPromptDesc: "Fortify your system prompts and input sanitization against sophisticated manipulation.",
+    svcPromptDesc:
+      "Fortify your system prompts and input sanitization against sophisticated manipulation.",
     svcCompliance: "Compliance Review",
-    svcComplianceDesc: "Ensure your AI deployments meet emerging regulatory frameworks and safety standards.",
+    svcComplianceDesc:
+      "Ensure your AI deployments meet emerging regulatory frameworks and safety standards.",
     pocJailbreak: "LLM Jailbreak Demo",
     pocInjection: "Prompt Injection PoC",
     pocExfil: "Data Exfiltration Test",
     pocBypass: "Guardrail Bypass",
+    viewFullscreen: "View fullscreen",
   },
   bg: {
     aiRedTeaming: "AI РЕД ТИЙМИНГ",
@@ -72,7 +79,6 @@ const translations = {
     pocLabel: "ДОКАЗАТЕЛСТВО",
     pocTitle: "Нашата",
     pocHighlight: "Работа",
-    pocPlaceholder: "Заменете с вашето PoC изображение",
     aboutLabel: "ЗА НАС",
     aboutTitle: "Защо",
     aboutHighlight: "Mind Hijack",
@@ -81,25 +87,33 @@ const translations = {
     contactLabel: "ИНИЦИИРАЙТЕ",
     contactTitle: "Готови ли сте да тествате",
     contactHighlight: "Защитите си",
-    contactDesc: "Нека змията одитира вашия AI. Свържете се за конфиденциална оценка.",
+    contactDesc:
+      "Нека змията одитира вашия AI. Свържете се за конфиденциална оценка.",
     contactCta: "СВЪРЖЕТЕ СЕ →",
     copyright: "© 2026 Mind Hijack. Всички права запазени.",
     svcLlm: "LLM Ред Тийминг",
-    svcLlmDesc: "Адверсариално тестване за разкриване на prompt injection, jailbreaks и манипулация на разсъжденията на вашите AI модели.",
+    svcLlmDesc:
+      "Адверсариално тестване за разкриване на prompt injection, jailbreaks и манипулация на разсъжденията на вашите AI модели.",
     svcVuln: "Откриване на Уязвимости",
-    svcVulnDesc: "Систематично изследване на вашия AI стек за намиране на експлоатируеми слабости преди атакуващите.",
+    svcVulnDesc:
+      "Систематично изследване на вашия AI стек за намиране на експлоатируеми слабости преди атакуващите.",
     svcAudit: "Одити на Сигурността",
-    svcAuditDesc: "Цялостна оценка на предпазните механизми, обработката на данни и безопасността на изхода на AI системите.",
+    svcAuditDesc:
+      "Цялостна оценка на предпазните механизми, обработката на данни и безопасността на изхода на AI системите.",
     svcPentest: "Пенетрационно Тестване",
-    svcPentestDesc: "Симулации на реални атаки срещу вашите AI приложения и API-та.",
+    svcPentestDesc:
+      "Симулации на реални атаки срещу вашите AI приложения и API-та.",
     svcPrompt: "Укрепване на Промптове",
-    svcPromptDesc: "Укрепете вашите системни промптове и санитизация на входа срещу сложни манипулации.",
+    svcPromptDesc:
+      "Укрепете вашите системни промптове и санитизация на входа срещу сложни манипулации.",
     svcCompliance: "Преглед за Съответствие",
-    svcComplianceDesc: "Осигурете вашите AI внедрявания да отговарят на новите регулаторни рамки и стандарти за безопасност.",
+    svcComplianceDesc:
+      "Осигурете вашите AI внедрявания да отговарят на новите регулаторни рамки и стандарти за безопасност.",
     pocJailbreak: "LLM Jailbreak Демо",
     pocInjection: "Prompt Injection PoC",
     pocExfil: "Тест за Ексфилтрация",
     pocBypass: "Заобикаляне на Guardrails",
+    viewFullscreen: "Преглед на цял екран",
   },
 } as const;
 
