@@ -268,7 +268,7 @@ const Index = () => {
           </p>
 
           <a
-            href="mailto:hello@mindhijack.com"
+            href="mailto:dankralski@gmail.com"
             className="inline-block px-8 sm:px-10 py-3 sm:py-4 bg-primary text-primary-foreground font-mono text-xs sm:text-sm tracking-wider rounded glow-red hover:brightness-110 transition-all"
           >
             {t.contactCta}
